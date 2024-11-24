@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: greensys.github.io/sitemap.xml
+Sitemap: shashikantilager.github.ioGreenSys/sitemap.xml
