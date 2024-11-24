@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: greensys.github.io/al-folio/sitemap.xml
+Sitemap: greensys.github.io/sitemap.xml
