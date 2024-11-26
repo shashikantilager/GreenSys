@@ -2,64 +2,22 @@
 layout: page
 title: Call
 permalink: /call/
-description: call for topics
+description: 
 nav: true
 nav_order: 1
 display_categories: [work, fun]
 horizontal: false
 ---
 
-<!-- pages/projects.md -->
-<div class="projects">
-{% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
-  {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
-  </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal %}
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-  {% endfor %}
+**Call for topics**
 
-{% else %}
+This workshop features two types of talks: (1) Invited Talks and (2) Journal First Presentations. We invite submissions for the Journal First track. The goal of these presentations is to provide authors with the opportunity to share their journal work that has not yet been publicly presented. Additionally, presenters are encouraged to discuss their ongoing projects. This will allow them to receive feedback and foster interactions and collaborations with other participants, including authors and distinguished researchers delivering invited talks.
 
-<!-- Display projects without categories -->
+Authors are invited to submit their journal publication research manuscripts in all areas of sustainable AI, energy-aware training and inference principles, carbon-aware large-scale AI systems, and platforms and architectures for sustainable computing. Specific topics include, but are not limited to:
 
-{% assign sorted_projects = site.projects | sort: "importance" %}
-
-  <!-- Generate cards for each project -->
-
-{% if page.horizontal %}
-
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-{% endif %}
-</div>
+- Sustainable AI
+- Energy-efficient AI MLOps
+- Carbon-aware LLMs
+- Software engineering practices for energy-aware AI
+- AI for energy-efficient systems
+- TODO

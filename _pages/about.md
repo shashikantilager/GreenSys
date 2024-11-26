@@ -2,7 +2,7 @@
 layout: about
 title: Home
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: 
 
 # profile:
 #   align: right
@@ -15,7 +15,7 @@ news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
-Welcome to GreenSys Website!
+Welcome to GreenSys!
 
 The rapid growth of Machine Learning (ML) and Artificial Intelligence (AI) applications has introduced significant sustainability challenges. These advanced computational models, with their intensive processing and data requirements, have substantially increased energy consumption in IT infrastructure, leading to a larger carbon footprint.
 
